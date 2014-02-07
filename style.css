@@ -1,0 +1,19 @@
+body {
+    font: 14px helvetica, sans-serif;
+    background-color: #ccc;
+}
+
+#container{
+    width: 500px;
+    margin: 0 auto;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+#container p{
+    line-height: 25px;
+}
+.profile{
+    float: left;
+    margin-right:25px; 
+}
