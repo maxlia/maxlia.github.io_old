@@ -1,12 +1,12 @@
 body {
     font: 14px helvetica, sans-serif;
-    background-color: #ccc;
+    background-image:url(food.png);
 }
 
 #container{
     width: 500px;
     margin: 0 auto;
-    background-color: #ddd;
+    background-color: rgba(223,116,1, 0.5);
     padding: 20px;
 }
 
