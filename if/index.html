@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Hello! World</title>
+		<style>
+			section {width: 600px; margin: 0 auto;}
+			body p{font-size: 20px; font-family:helvetica, sans-serif; color: #333;}
+			span {background-color: rgb(255,255,0); color: rgb(255,0,0);}
+		</style>
+	</head>
+	<body>
+		<section>
+			<p><span id="bandname"> (Band)</span> is an American band from <span id="statename"> (State)</span>. Formed in <span id="year_1">(Year)</span>, the band rose to international fame with their debut album <span id="album_1">(Album)</span>. Their following studio album <span id="album_2"> (Second Album)</span>, continued the band's success, topping the <span id="award_1"> (Music Award)</span> 200 album chart in 2003, and was followed by extensive touring and charity work around the world. In 2003, <span id="tv"> (TV Network)</span> named <span id="bandname_1"> (Band)</span> the sixth-greatest band of the music video era and the third-best of the new millennium. <span id="award_2"> (Music Award) </span> ranked <span id="bandname_2"> (Band)</span> No. 19 on the Best Artists of the Decade chart. The band was recently voted as the greatest artist of '00s in a Bracket Madness poll on <span id="tv_1"> (Second TV Network)</span>.</p>
+		</section>
+		<script type="text/javascript">
+			
+			var placeholder = [
+				'bandname',
+				'statename',
+				'year_1',
+				'album_1',
+				'album_2',
+				'award_1',
+				'tv',
+				'bandname_1',
+				'award_2',
+				'bandname_2',
+				'tv_1'
+			];
+
+			for (var i = 0; i < placeholder.length; i++) {
+				var title = placeholder[i];
+				var content = document.getElementById(title);
+				content.addEventListener('click',replace,false);
+			}
+
+			function replace(o) {
+				var content = o.target;
+				var user = prompt ('Enter a ' + content.innerHTML);
+				if(user !== null){
+				content.innerHTML = user;
+				}
+			}
+
+		</script>
+	</body>
+</html>
