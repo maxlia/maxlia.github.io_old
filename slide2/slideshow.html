@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Slideshow</title>
+    </head>
+    <body>
+        <img id="image" src="images/1.jpg" alt="" >
+        <script src="jquery-1.11.0.js"></script>
+        <script>
+            var num =1;
+            var max = 5;
+            function slide(){
+                num++;
+                if (num > max){
+                    num = 1;
+                }
+                $('#image').fadeOut(3000, function(){ 
+                $('img').attr('src', 'images/' + num +'.jpg');
+                $('img').fadeIn(3000);
+                });
+           }
+
+            $('#image').setTimeout(slide, 3000);
+        </script>
+    </body>
+</html>
